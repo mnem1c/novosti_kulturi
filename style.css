@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Playfair Display", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+ }
+/* style header */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.main-header__title {
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 46px;
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.site-navigation, 
+.footer-navigation {
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.site-navigation__link:hover,
+.footer-navigation__item--link:hover {
+  color: #FF7931;
+}
+/* style main */
+.news {
+  margin: 0 auto;
+  width: 100%;
+  height: 464px;
+  background-image: url(../img/underwater_hotel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__title {
+  position: relative;
+  margin: 0;
+  padding-top: 133px;
+  padding-bottom: 133px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.news__title:before {
+  position: absolute;
+  content: ' ';
+  width: 55px;
+  height: 55px;
+  left: 555px;
+  top: 46px;
+  background-image: url(../img/preview-icon.svg);
+}
+.news__title:after {
+  position: absolute;
+  content: 'Новое';
+  width: 117px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  background-color: #FF7931;
+}
+.news__text {
+  margin: 0 auto;
+  padding-bottom: 48px;
+  width: 456px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.reviews__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 44px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.reviews__list {
+  margin: 0;
+  margin-bottom: 51px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.reviews__item {
+  align-items: stretch;
+  width: 370px;
+}
+.reviews__item-title {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 9px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+.reviews__item-title--link:hover {
+  color: #FF7931;
+}
+.reviews__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.price {
+  position: relative;
+  padding-bottom: 33px;
+  margin-bottom: 56px;
+  background-color: #F7F7F7;
+  background: radial-gradient(circle, #ffffff 353px, #F7F7F7 353px);
+}
+.price-title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 35px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.price-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-list__item {
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  width: 370px;
+}
+.price-list__item:not(:last-child)::after {
+  position: absolute;
+  content: ' ';
+  width: 100px;
+  height: 0px;
+  opacity: 0.4;
+  bottom: 2px;
+  left: 135px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.price-list__title {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  text-align: center;
+}
+.price-list__text {
+  margin: 0;
+  padding: 0;
+  line-height: 21px;
+  text-align: center;
+}
+.price-link {
+  display: block;
+  position: relative;
+  max-width: 80px;
+  padding: 19px 60px 15px 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #FF7931;
+  color: #FFFFFF;
+}
+.price-link:before {
+  position: absolute;
+  content: ' ';
+  width: 24px;
+  height: 25px;
+  top: 13px;
+  left: 118px;
+  background-image: url(../img/arrow\ forward.svg);
+  background-repeat: no-repeat;
+}
+.button:hover {
+  background-color: #e66b29;
+}
+/* style footer */
+.main-footer {
+  background-color: #575757;
+}
+.footer-title {
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 32px;
+  font-family: Playfair Display;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 37px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer-navigation {
+  position: relative;
+  margin: 0;
+  padding-bottom: 46px;
+}
+.footer-navigation:after {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  bottom: 0;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.4; 
+}
+.footer-navigation__item--link {
+  color: #ffffff;
+}
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 170px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 42px;
+  padding-bottom: 46px;
+  list-style: none;
+}
+.social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  background-color: #ffffff;
+}
+.social__button:hover {
+  background-color: #FF7931;
+}
